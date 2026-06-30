@@ -1,0 +1,226 @@
+body {
+    background-color: #0d0b14;
+    color: #ffffff;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 60px 20px;
+    display: block;
+}
+
+.hero {
+    background-color: #1a162b;
+    padding: 40px;
+    border-radius: 16px;
+    text-align: center;
+    max-width: 750px;
+    width: 100%;
+    margin: 0 auto 50px auto;
+    border: 1px solid #3c1e6d;
+    box-shadow: 0 8px 32px rgba(138, 43, 226, 0.2);
+    box-sizing: border-box;
+}
+
+.profile-pic {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 3px solid #8a2be2;
+    object-fit: cover;
+    margin-bottom: 20px;
+    box-shadow: 0 0 15px rgba(138, 43, 226, 0.5);
+}
+
+h1 {
+    font-size: 2.5rem;
+    margin: 10px 0;
+}
+
+.highlight {
+    color: #9d4edd; 
+    text-shadow: 0 0 10px rgba(157, 78, 221, 0.5);
+}
+
+h3 {
+    color: #b3b3b3;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+
+p {
+    color: #e0e0e0;
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+
+.skills-container {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    margin-bottom: 30px;
+    flex-wrap: wrap;
+}
+
+.skill-badge {
+    background: #120e1e;
+    border: 1px solid #8a2be2;
+    padding: 6px 15px;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    font-weight: bold;
+    color: #9d4edd;
+    box-shadow: 0 0 10px rgba(138, 43, 226, 0.2);
+    transition: 0.3s;
+}
+
+.skill-badge:hover {
+    background: #8a2be2;
+    color: white;
+    box-shadow: 0 0 15px rgba(138, 43, 226, 0.6);
+}
+
+.btn-primary {
+    display: inline-block;
+    text-decoration: none;
+    padding: 12px 28px;
+    background: linear-gradient(135deg, #8a2be2, #4b0082);
+    color: white;
+    font-weight: bold;
+    border-radius: 8px;
+    transition: 0.3s ease;
+    box-shadow: 0 4px 15px rgba(138, 43, 226, 0.4);
+}
+
+.btn-primary:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 20px rgba(157, 78, 221, 0.6);
+}
+
+.projects-container {
+    max-width: 750px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.projects-container h2 {
+    font-size: 2rem;
+    margin-bottom: 30px;
+    color: #9d4edd;
+    text-shadow: 0 0 10px rgba(157, 78, 221, 0.3);
+}
+
+.projects-grid {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px; 
+    width: 100%;
+}
+
+.sub-grid {
+    display: flex;
+    gap: 20px;
+    width: 100%;
+    justify-content: center;
+}
+
+.project-card {
+    background-color: #1a162b;
+    border: 1px solid #3c1e6d;
+    border-radius: 12px;
+    padding: 30px;
+    width: 50%;
+    text-align: left;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+    box-sizing: border-box;
+}
+
+.contact-card {
+    width: 100%;
+}
+
+.project-icon {
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+}
+
+.project-card h3 {
+    margin: 10px 0;
+    color: #ffffff;
+    font-size: 1.3rem;
+}
+
+.project-card p {
+    color: #b3b3b3;
+    font-size: 0.95rem;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+    border-color: #8a2be2;
+    box-shadow: 0 8px 25px rgba(138, 43, 226, 0.3);
+}
+
+.btn-secondary {
+    display: inline-block;
+    text-decoration: none;
+    color: #9d4edd;
+    border: 2px solid #9d4edd;
+    padding: 8px 20px;
+    border-radius: 6px;
+    font-weight: bold;
+    font-size: 0.9rem;
+    transition: 0.3s ease;
+}
+
+.btn-secondary:hover {
+    background-color: #9d4edd;
+    color: white;
+    box-shadow: 0 0 10px rgba(157, 78, 221, 0.5);
+}
+
+.quick-contact {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.quick-contact input, .quick-contact textarea {
+    background: #0d0b14;
+    border: 1px solid #3c1e6d;
+    border-radius: 6px;
+    padding: 12px;
+    color: white;
+    font-family: inherit;
+    outline: none;
+    transition: 0.3s;
+}
+
+.quick-contact input:focus, .quick-contact textarea:focus {
+    border-color: #9d4edd;
+    box-shadow: 0 0 10px rgba(157, 78, 221, 0.4);
+}
+
+.quick-contact button {
+    cursor: pointer;
+    background: transparent;
+    width: 100%;
+}
+
+.portfolio-footer {
+    text-align: center;
+    margin-top: 60px;
+    padding: 20px 0;
+    width: 100%;
+    display: block;
+}
+
+.portfolio-footer p {
+    font-size: 0.85rem;
+    color: #555266;
+    margin: 0;
+}
