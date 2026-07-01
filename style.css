@@ -295,55 +295,30 @@ p {
 }
 
 .skills-container-donut {
-    display: flex !important;
-    flex-direction: row !important;
-    justify-content: center !important;
-    align-items: center !important;
-    gap: 25px !important;
-    flex-wrap: nowrap !important;
-    width: 100% !important;
-    margin-top: 30px;
-    background: transparent !important;
-    background-color: transparent !important;
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: center;
+    gap: 20px;
+    width: 100%;
 }
 
 .skill-chart-card {
+    flex: 1 1 120px;
+    max-width: 150px;
     text-align: center;
-    width: 160px; 
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background: transparent !important; 
-    background-color: transparent !important;
-    border: none !important;
-    box-shadow: none !important;
-    -webkit-box-shadow: none !important;
-}
-
-.skill-chart-card h3 {
-    color: #ffffff !important;
-    margin-top: 15px;
-    font-size: 1.1rem;
-    text-shadow: none !important;
 }
 
 .chart-donut-container {
+    width: 100%;
+    height: auto;
     position: relative;
-    width: 150px;  
-    height: 150px; 
-    background: transparent !important;
-    background-color: transparent !important;
-    box-shadow: none !important;
 }
 
 .chart-svg {
-    transform: rotate(-90deg); 
     width: 100%;
-    height: 100%;
-    background: transparent !important;
-    background-color: transparent !important;
-    box-shadow: none !important;
+    height: auto;
 }
+
 
 .chart-donut-background {
     fill: none !important;
@@ -357,9 +332,10 @@ p {
     stroke-width: 10 !important;             
     stroke-linecap: round !important;        
     transition: stroke-dasharray 1s ease-out;
-    stroke-dasharray: calc(var(--percent) * 2.2) 220;
-    
+    stroke-dasharray: calc(var(--percent) * 2.2) 220;  
     filter: none !important;
+    transform: rotate(-90deg);
+    transform-origin: center;
 }
 
 .percentage-donut {
@@ -393,26 +369,23 @@ p {
     margin: 0 auto;
 }
 
-/* Ang mismong vertical track/linya sa kaliwang gilid */
 .timeline-container {
     position: relative;
-    border-left: 3px solid rgba(188, 19, 254, 0.4); /* Banayad na purple track */
+    border-left: 3px solid rgba(188, 19, 254, 0.4);
     margin: 0 auto;
     padding-left: 35px;
     max-width: 750px;
 }
 
-/* Wrapper para sa bawat item */
 .timeline-item {
     position: relative;
     margin-bottom: 40px;
 }
 
-/* ANG NAG-G-GLOW NA BILOG SA GILID (Glow ay nakabase sa original purple mo) */
 .timeline-dot {
     position: absolute;
-    left: -46.5px; /* Sakto ang align sa vertical line */
-    top: 35px; /* Alignment para katapat ng orihinal mong card padding */
+    left: -46.5px;
+    top: 35px;
     width: 20px;
     height: 20px;
     border-radius: 50%;
@@ -422,12 +395,10 @@ p {
     z-index: 2;
 }
 
-/* Pwersahing sumakop sa buong luwang ang card sa loob ng timeline */
 .timeline-item .project-card {
     width: 100% !important;
 }
 
-/* LALONG MAG-G-GLOW ANG BILOG KAPAG NAKA-HOVER ANG ORIGINAL CARD MO */
 .timeline-item:hover .timeline-dot {
     background: #ffffff; 
     box-shadow: 0 0 20px #bc13fe, 0 0 35px #bc13fe !important;
