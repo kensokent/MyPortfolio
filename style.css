@@ -405,5 +405,18 @@ p {
     transform: scale(1.2);
 }
 
+.social-links {
+    margin-bottom: 10px;
+}
+.social-links a {
+    color: white;
+    font-size: 24px;
+    margin: 0 10px;
+    text-decoration: none;
+}
+.social-links a:hover {
+    color: #bc13fe;
+}
+
 
 
